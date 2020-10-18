@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="88" viewBox="0 0 151 88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffde00;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="speechbubble.svg" class="cls-1" d="M0,0H151V74H13.9L0,88V0Z"/>
+</svg>
