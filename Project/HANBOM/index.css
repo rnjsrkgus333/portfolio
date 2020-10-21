@@ -23,8 +23,12 @@ header .active span::before {top: 0; transform: rotate(45deg); background-color:
 header .active span::after {top: 10px; transform: translatey(-10px) rotate(-45deg); background-color: #000 !important;}
 header .white span,header .white span::before,header .white span::after {background-color: #000;}
 
-header nav {position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 100; background-color: #fff; display: none; border: #ffde00 solid 8px; animation: navBorder 0.8s ease;}
+header nav {position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 100; background-color: #fff; display: none; border: #ffde00 solid 8px; -webkit-animation: navBorder 0.8s ease; animation: navBorder 0.8s ease;}
 header .nav_active{display: block;}
+@-webkit-keyframes navBorder {
+	0% {border-width: 0px;}
+	100% {border-width: 8px;}
+}
 @keyframes navBorder {
 	0% {border-width: 0px;}
 	100% {border-width: 8px;}
@@ -55,7 +59,12 @@ header nav p {position: absolute; bottom: 10%; left: 16.666%; font-size: 12px; f
 .fix_bar .brochure p {margin: 0;font-size: 20px; text-align: right; color: #fff;}
 .fix_bar .brochure .hide { position: absolute; top: 500px; left: -50%;}
 .fix_bar .brochure .hide .circle {position: relative;}
-.fix_bar .brochure .hide .circle img {animation:  circletxt 7.5s infinite linear 0.3s;}
+.fix_bar .brochure .hide .circle img {-webkit-animation:  circletxt 7.5s infinite linear 0.3s;animation:  circletxt 7.5s infinite linear 0.3s;}
+
+@-webkit-keyframes circletxt {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
 
 @keyframes circletxt {
     0%{transform: rotate(0);}
@@ -94,7 +103,7 @@ header nav p {position: absolute; bottom: 10%; left: 16.666%; font-size: 12px; f
 
 .intro.top.escape .section-wrap {z-index:-1;}
 .intro.top.escape .section-wrap .text{visibility: hidden;}
-.intro.second.escape .section-wrap{position:static; animation-fill-mode: forwards;}
+.intro.second.escape .section-wrap{position:static; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards;}
 
 @-webkit-keyframes textescape {
 	0%  {padding-top:0;}
@@ -164,7 +173,7 @@ header nav p {position: absolute; bottom: 10%; left: 16.666%; font-size: 12px; f
 .works ul li .text h4 {color: #000;text-align: center; margin: 0; font-size: 43px; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
 .works ul li .text p {text-align: center;color: #000; margin: 0; padding-top: 11px; font-size: 15px; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
 .works .view_more {padding-bottom: 140px;}
-.works .view_more a {width: fit-content; margin: 0 auto;}
+.works .view_more a {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content; margin: 0 auto;}
 .works .view_more p {text-align: center; font-size: 24px; color: #000; font-style: italic; margin: 0;}
 .works .view_more em {font-style: normal; font-size: 30px;}
 
@@ -187,14 +196,14 @@ header nav p {position: absolute; bottom: 10%; left: 16.666%; font-size: 12px; f
 .inside_box .text li p {color: #000; font-size: 16px; margin: 0; line-height: 38px; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
 .inside_box .text li img {width: 24px; height: 17px;}
 .inside_box .view_more {padding-top: 31px;}
-.inside_box .view_more a {width: fit-content;}
+.inside_box .view_more a {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content;}
 .inside_box .view_more p {color: #000; font-size: 20px; margin: 0;}
 
 /* footer */
 .footer_box .opacity {opacity: 1;}
 .footer_box {overflow: hidden; width: 100%; height: 438px; display: flex; justify-content: center; align-items: center;position: fixed; bottom: 0; z-index: 0;}
 /*  position: fixed; bottom: 0; z-index: 0; background: 0 none; height: 438px;  */
-.footer_box ul a {width: fit-content; margin: 0 auto; color: #000; font-size: 32px; line-height: 60px; font-style: italic; text-align: center; position: relative; padding: 0 10px;opacity: 0;}
+.footer_box ul a {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content; margin: 0 auto; color: #000; font-size: 32px; line-height: 60px; font-style: italic; text-align: center; position: relative; padding: 0 10px;opacity: 0;}
 .footer_box ul a::before {content: ""; width:0%; height: 4px; transition: 0.3s; position: absolute; top:50%; left:0; transform: translate(0,-10%); background-color: #ffde00; }
 .footer_box ul a:hover::before {width: 100%;}
 
@@ -216,7 +225,11 @@ header nav p {position: absolute; bottom: 10%; left: 16.666%; font-size: 12px; f
     header .menu_btn span::after {bottom: -13px;}
     header .active span::before {top:0}
 
-    header nav {border: #ffde00 solid 40px; animation: navBorder 0.8s ease;}
+    header nav {border: #ffde00 solid 40px; -webkit-animation: navBorder 0.8s ease; animation: navBorder 0.8s ease;}
+    @-webkit-keyframes navBorder {
+        0% {border-width: 0px;}
+        100% {border-width: 40px;}
+    }
     @keyframes navBorder {
         0% {border-width: 0px;}
         100% {border-width: 40px;}
@@ -276,7 +289,7 @@ header nav p {position: absolute; bottom: 10%; left: 16.666%; font-size: 12px; f
     .works ul li .text h4 {font-size: 4.6875vw; line-height: 5.20833vw;}
     .works ul li .text p { padding-top: 53px; font-size: 24px;}
     .works .view_more {padding-bottom: 0; margin-top: -45px; padding-left: 120px;}
-    .works .view_more a {width: fit-content; margin: 0;}
+    .works .view_more a {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content; margin: 0;}
     .works .view_more p {font-size: 40px;}
     .works .view_more em {font-style: normal; font-size: 50px;}
 

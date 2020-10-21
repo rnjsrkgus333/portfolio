@@ -47,7 +47,7 @@ header .mo_menu .menu_box li .box {background-color: #09498D; color: #fff; width
 header .mo_menu .menu_box a {margin: 0;}
 
 /* pc_menu */
-header #pc_nav {display: none; width: fit-content; position: absolute; top: 85px; left: 0; right: 0; margin: auto; text-align: center; z-index: 5; }
+header #pc_nav {display: none; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; position: absolute; top: 85px; left: 0; right: 0; margin: auto; text-align: center; z-index: 5; }
 header #pc_nav > li > a {width: 120px;color: #fff; margin-bottom: 10px;}
 header #pc_nav .sub_nav {background-color: rgba(255, 255, 255, 0.5); display: none; }
 header #pc_nav .sub_nav a {font-size: 14px; padding: 10px 0;}
@@ -71,7 +71,7 @@ header #pc_nav .sub_nav a:hover {color: #09498D;}
 
 
 /* collection */
-.collection .img_1 {position: relative;text-align: center; margin: 60px auto 50px ;}
+.collection .img_1 {position: relative; text-align: center; margin: 60px auto 50px ;}
 .collection .img_1 img {width: 95%;}
 .collection .img_1 h2 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 60%; color: #fff; font-family: 'S-CoreDream-6',sans-serif;}
 .collection .txt {margin: 50px 45px; font-size: 13px; text-align: left;}
@@ -83,9 +83,9 @@ header #pc_nav .sub_nav a:hover {color: #09498D;}
 /* best */
 .best {padding: 80px 0;}
 .best h3 {margin: 0 0 32px ;}
-.best .grid {display: grid; grid-template:repeat(3,auto)/repeat(2,1fr); padding:
-0 2px; gap: 4px;}
+.best .best_box {padding: 0 2px; display: flex; flex-wrap: wrap; }
 
+.best .product {width: 50%;}
 .product .img {width: 100%; height:0; padding-bottom: 133%; background-color: #444; cursor: pointer;}
 .product p {font-size: 12px; margin: 0;}
 .product #product {font-family: 'S-CoreDream-5',sans-serif;margin: 18px 0 3px;}
@@ -108,8 +108,9 @@ header #pc_nav .sub_nav a:hover {color: #09498D;}
 /* 추천 */
 .recommend {padding: 80px 0;}
 .recommend h3 {margin: 0 0 32px ;}
-.recommend .grid {display: grid; grid-template:repeat(4,auto)/repeat(2,1fr); padding:
-    0 2px; gap: 4px;}
+.recommend .recommend_box {padding: 0 2px; display: flex; flex-wrap: wrap;}
+.recommend .product {width:50%}
+
 .recommend .product .img_1 {background: url(images/recomm_1.png) 50% 50% no-repeat; background-size: contain;}
 .recommend .product .img_2 {background: url(images/recomm_2.png) 50% 50% no-repeat; background-size: contain;}
 .recommend .product .img_3 {background: url(images/recomm_3.png) 50% 50% no-repeat; background-size: contain;}
@@ -169,23 +170,22 @@ footer .sns .insta a {width: 15px; height:15px; background: url(images/instagram
 
     /* collection */
     .collection { width:83%; height:685px;
-        max-width: 1200px; margin: 150px auto; display: grid; grid-template: 40% 60%/ 1fr 1fr;}
-        /*  grid-template-areas:"A B""A C"; */
+        max-width: 1200px; margin: 150px auto;}
 
-    .collection .img_1 {grid-row: 1/3; grid-column: 1/2; margin: 0;}
+    .collection .img_1 {float: left; margin: 0;}
     .collection .img_1 img {width: 100%; }
     .collection .img_1 h2 {font-size: 38px; width: 100%;}
-    .collection .txt {margin: 0; margin: 80px 0 0 20%; font-size: 14px;}
-
-    .collection .img_2 {grid-row: 2/3; grid-column: 2/3; text-align: right;}
+    .collection .txt {margin: 0; margin: 150px 20% 0 0; font-size: 14px;}
+    .collection .txt {float:right;}
+    .collection .img_2 {float:right; text-align: left;}
     .collection .img_2 img {width: 80%;}
 
     /* best */
     .best {padding: 0 ;}
     .best h3 {margin: 0 0 50px ;}
-    .best .grid {width:80%; max-width: 1180px; margin: 0 auto; grid-template:repeat(2,auto)/repeat(3,1fr); }
-    /* padding:auto; gap: auto;place-content: space-between space-between; */
-
+    .best .best_box {width:80%; max-width: 1180px; margin: 0 auto;}
+    
+    .best .product {width: 33.3333%;}
     .product .img {width: 270px; height:360px; padding-bottom: 0; margin: 0 auto;}
     .product p {font-size: 14px;}
     .product #product {margin: 18px 0 5px;}
@@ -200,20 +200,21 @@ footer .sns .insta a {width: 15px; height:15px; background: url(images/instagram
     .best .product .img_6:hover {background: url(images/best_6-2.png) no-repeat;background-size: contain;}
 
     /* divide */
-    .divide {display: grid; grid-template-columns: 1fr 1fr;}
+    .divide {display: flex; }
     .divide h3 { font-family: 'S-CoreDream-5',sans-serif; font-size: 42px; }
+    .divide > div {width: 50%; height: 600px; padding-bottom: 0; position: relative; cursor: pointer;}
     .divide .woman {background: url(images/woman.png) 50% 50% no-repeat; background-size: cover;}
     .divide .man {background: url(images/man.png) 50% 50% no-repeat; background-size: cover;}
     .divide .woman:hover {background: url(images/woman.gif) 50% 50% no-repeat; background-size: cover;}
     .divide .man:hover {background: url(images/man.gif) 50% 50% no-repeat; background-size: cover;}
-    .divide .border {box-shadow: 0px 0px 0px 50px #305A80 inset;}
+    .divide .border {width: 100%; height: 600px; box-shadow: 0px 0px 0px 50px #305A80 inset; padding-bottom: 0;}
 
     /* 추천 */
     .recommend {padding: 80px 0;}
-    .recommend h3 {margin: 0 0 50px ;}
-    .recommend .grid {width:90%; max-width: 1300px; margin: 0 auto;  grid-template:repeat(2,auto)/repeat(4,1fr); padding:auto; gap: auto;place-content: space-between space-between;}
-    .recommend .product {position: relative; overflow: hidden;}
+    .recommend h3 {margin: 0 0 50px;}
+    .recommend .recommend_box {width:90%; max-width: 1300px; margin: 0 auto;}
 
+    .recommend .product {position: relative; overflow: hidden; width: 25%;}
     .recommend .product .img {width: 280px; height:370px; padding-bottom: 0; margin: 0 auto;}
 
     .recommend .product .txt {width: 280px; height:370px; margin: 0 20px; color:#fff;background-color: rgba(68, 68, 68, 0.5); padding: 130px 0; display: flex; flex-direction: column; justify-content: space-between; position: absolute; top:-370px;left:0; }

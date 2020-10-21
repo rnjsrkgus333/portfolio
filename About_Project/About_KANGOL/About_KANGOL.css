@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body {margin: 0; padding: 0; background: #E0E9F1 url(../../images/paper-texture-wide.png) no-repeat; background-attachment: fixed; background-size: 100%; font-family: 'S-CoreDream-4',sans-serif; color: #343434;}
+body {margin: 0; padding: 0; background: #E0E9F1 url(images/paper-texture-wide.png) no-repeat; background-attachment: fixed; background-size: 100%; font-family: 'S-CoreDream-4',sans-serif; color: #343434;}
 
 body * {box-sizing: border-box;}
 body a {display: block; text-decoration: none; color: #343434;}
@@ -14,7 +14,7 @@ header .pc .logo img {width: 58px;}
 header .mobile {width: 90%; height: 45px;font-size: 11px; display: flex; justify-content: space-between; align-items: center; border: 1px solid #343434; }
 header > .mobile {position: fixed; top: 20px; left: 50%; transform: translate(-50%,0); z-index: 10;background-color: #E0E9F1;}
 header .mobile .logo a {width:45px; height: 45px; display: flex; align-items: center;justify-content: center;}
-header .mobile .logo .img {width: 30px;height: 30px; background: url(../../images/logo.png);background-size: cover;}
+header .mobile .logo .img {width: 30px;height: 30px; background: url(images/logo.png);background-size: cover;}
 header .mobile .line {height: 50%; border-left: 1px solid #343434;}
 
 header .mobile .txt {width: 70%; height: 45px; padding: 10px 5px;display: flex; flex-direction: column; justify-content: space-between;}
@@ -27,7 +27,7 @@ header .mobile .menubtn {width:45px; height: 45px;display: flex; align-items: ce
 .menu .mobile {border: none; margin: 20px auto 150px; border: 1px solid #E6E2DD; border-right: none;}
 .menu .mobile .line {border: 1px solid #E6E2DD;}
 .menu .mobile .logo {width:45px; height: 45px;}
-.menu .mobile .logo .img {background: url(../../images/logo_menu.png); background-size: cover;}
+.menu .mobile .logo .img {background: url(images/logo_menu.png); background-size: cover;}
 .menu .box {border-top: 1px solid #E6E2DD; border-bottom: 1px solid #E6E2DD;margin: 0px auto; position: relative;text-align: center;}
 .menu .box a {color: #E6E2DD;}
 
@@ -56,7 +56,7 @@ header .mobile .menubtn {width:45px; height: 45px;display: flex; align-items: ce
 .preview {width: 90%; margin: 20px auto;}
 .preview img {width: 100%; box-shadow: 3px 3px 3px #343434;}
 
-.shortcut_btn a { width:fit-content; margin: 0 auto; padding: 10px 30px; background-color: #343434; font-size: 18px;color: #EEE9E4; transition: box-shadow 0.5s;}
+.shortcut_btn a { width:-webkit-fit-content; width:-moz-fit-content; width:fit-content; margin: 0 auto; padding: 10px 30px; background-color: #343434; font-size: 18px;color: #EEE9E4; transition: box-shadow 0.5s;}
 .shortcut_btn a:hover {box-shadow: 5px 5px #707070;}
 
 .contents h3 {width: 80%; font-family: 'S-CoreDream-6',sans-serif; font-size: 32px; margin: 100px auto 30px;}
@@ -123,12 +123,12 @@ footer {height: 70px; color: #8E8A86; font-size: 12px;background-color: #343434;
     .explain_box > div {width: 50%;}
 
     .explain_box .color > div {width: 70%; margin: 0 auto; padding-left: 15px; justify-content: left;}
-    .explain_box .color > div p {width: fit-content;}
+    .explain_box .color > div p {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content;}
     .explain_box .color > div > div {width: 52px; height: 52px; }
 
 
     .pc_analysis {margin-bottom: 100px;}
-    .pc_analysis table td {width: fit-content;}
+    .pc_analysis table td {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content;}
     .pc_analysis table td ul li {margin-bottom: 10px;}
     .pc_analysis p { width:100%;padding:0 0 10px 0; margin: 0;}
 

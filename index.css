@@ -88,10 +88,10 @@ nav a:hover::before {width: 110%;}
 #about .myintro .pic {margin: 40px auto 30px;}
 #about .myintro .pic img {width: 190px;}
 #about .myintro .pic p {margin: 0; font-size: 12px;}
-#about .myintro .txt h4 {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content; font-family: 'S-CoreDream-6',sans-serif; padding: 9px 15px; border: 3px solid #343434; margin: 0 auto; font-size: 22px;}
+#about .myintro .txt h4 { text-align: left; width:100%; font-family: 'S-CoreDream-6',sans-serif; padding: 9px 15px; border: 3px solid #343434; margin: 0 auto; font-size: 22px;}
 #about .myintro .txt p {width: 90%; margin: 30px auto 60px; text-align: left;}
 
-#about .line_mo {width: 80%; border-top: 1px solid #707070; margin: 0 auto;}
+#about .line_mo {width: 80%; border-top: 1px solid #707070; margin: 0 auto; }
 #about .cate {margin: 50px auto 90px;}
 #about .cate h4 {margin: 40px auto 20px;font-size: 30px; font-family: 'S-CoreDream-6',sans-serif;}
 #about .cate .txt {width: 330px; margin: auto; display: flex; text-align: left;line-height: 1.7;}
@@ -195,23 +195,26 @@ footer {height: 70px; color: #8E8A86; font-size: 12px;background-color: #343434;
     #about .cate .cert {width: 40%;}
     #about .cate .line_pc {height: 400px; border-right: 1px solid #707070; margin: 50px;}
     /* contact */
+
     .contact h3 {margin: 0 auto 30px;}
-    .contact .gdbox {display: grid; grid-template: 70% 30%/ 35% 65%;grid-template-areas: "info skill""logo skill";}
-    
-    .contact #info {border-top: 1px solid #707070; border-bottom: 1px solid #707070; padding: 70px;}
-    .contact #info .name {width:380px; font-size: 55px; border: 3px solid #707070; margin: 30px auto 50px; padding: 10px; display: flex;align-items: center; justify-content: center;}
+    .contact .gdbox {overflow: hidden;}
+
+    .contact #info {width:30%; height:700px; float: left; border-top: 1px solid #707070; border-bottom: 1px solid #707070; padding: 70px;}
+    .contact #info .name {width:100%; font-size: 3vw; border: 3px solid #707070; margin: 30px auto 50px; padding: 10px; display: flex;align-items: center; justify-content: center;}
     .contact #info .sub img { width: 45px; height: 45px;} 
     .contact #info .sub p {font-size: 25px;}
     .contact #info .sub:last-of-type {margin-bottom: 95px;}
-    .contact .skill {border: 1px solid #707070; border-right: none; grid-area: skill; display: flex; padding: 80px 70px}
+
+    .contact .skill {width:70%; height:1000px; float: right; border: 1px solid #707070; border-right: none;  display: flex; padding: 80px 70px}
+    /* grid-area: skill; */
     .contact .skill h4 {font-size: 55px; margin: 0}
     .contact .skill .sub {display:flex; flex-direction: column; padding-left: 50px; justify-content: space-around;}
     .contact .skill .box {width: 100%; padding: 20px;}
-    .contact .skill .box h5{ font-size: 40px; top: -35px; left: 20px; padding: 5px;}
+    .contact .skill .box h5{ font-size: 2.5vw; top: -35px; left: 20px; padding: 5px;}
     .contact .skill p {font-size: 24px;}
     .contact .skill .box:last-of-type {margin-bottom: 0px;}
 
-    .contact .logo {height: auto; position: relative;}
+    .contact .logo {width:30%; height:300px; float: left;  position: relative;}
     .contact .logo img {width: 180px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
     .contact .logo #logo_nothov {display: block;}
     .contact .logo #logo_hov {display: none;}

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body {margin: 0; padding: 0; background: #EBCCB4 url(../../images/paper-texture-wide.png) no-repeat; background-attachment: fixed; background-size: 100%; font-family: 'S-CoreDream-4',sans-serif; color: #343434;}
+body {margin: 0; padding: 0; background: #EBCCB4 url(images/paper-texture-wide.png) no-repeat; background-attachment: fixed; background-size: 100%; font-family: 'S-CoreDream-4',sans-serif; color: #343434;}
 
 body * {box-sizing: border-box;}
 body a {display: block; text-decoration: none; color: #343434;}
@@ -33,7 +33,11 @@ header .pc .logo img {width: 58px;}
 .main .sub_title h4 {margin: 50px 0 100px; font-size: 55px;}
 .main .txt p {font-size: 28px; margin: 15px 0; padding-left: 0; width: 100%;}
 
-.main #scrollDown {font-size: 30px; animation: scrollDown 0.5s infinite ease-in alternate 0.5s;}
+.main #scrollDown {font-size: 30px; -webkit-animation: scrollDown 0.5s infinite ease-in alternate 0.5s; animation: scrollDown 0.5s infinite ease-in alternate 0.5s;}
+@-webkit-keyframes scrollDown{
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(8px);}
+}
 @keyframes scrollDown{
     0% {transform: translateY(0px);}
     100% {transform: translateY(8px);}
@@ -60,7 +64,7 @@ header .pc .logo img {width: 58px;}
 .research .target .txt_box > div {width: 33%;}
 .research .target .txt_box p {text-align: center; padding-left: 0; font-size: 24px; width: 100%; line-height: 1.5;}
 .research .target .txt_box .sub {font-size: 18px;}
-.research .target .img {width: fit-content; margin: 0 auto;}
+.research .target .img {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content; margin: 0 auto;}
 
 .research .mainProCon >.txt_box {display: flex;}
 .research .mainProCon >.txt_box h4 {margin-top: 0;}
@@ -75,7 +79,7 @@ header .pc .logo img {width: 58px;}
 .research .competitors .tab_menu li .app > div {width:100%; position: relative;display: flex; justify-content: space-around; align-items: center;}
 .research .competitors .tab_menu li .app img {width: 100px;}
 .research .competitors .tab_menu .app #app_img {opacity: 0.5;}
-.research .competitors .tab_menu li .app p {font-size: 32px; font-family: 'S-CoreDream-6',sans-serif; padding: 0; width: fit-content;opacity: 0.5;}
+.research .competitors .tab_menu li .app p {font-size: 32px; font-family: 'S-CoreDream-6',sans-serif; padding: 0; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content;opacity: 0.5;}
 .research .competitors .tab_menu li .app #arrow {width: 60px; height: 60px; position: absolute; left: 0; right: 0; margin: 0 auto; bottom:-45px; display: none;}
 
 
@@ -122,9 +126,9 @@ header .pc .logo img {width: 58px;}
 .styleGuide .style_box .font .txt_box #bold {font-weight: bold;}
 
 .styleGuide .style_box .keyword #keyword_1 {text-align: center;}
-.styleGuide .style_box .keyword #keyword_2 {width: fit-content;}
+.styleGuide .style_box .keyword #keyword_2 {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content;}
 
-.styleGuide .style_box .color .color_box {background-color: #e8e8e8; width: fit-content; font-size: 18px;padding: 10px;}
+.styleGuide .style_box .color .color_box {background-color: #e8e8e8; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; font-size: 18px;padding: 10px;}
 .styleGuide .style_box .color .color_box .circle {display: flex;}
 .styleGuide .style_box .color .color_box .circle div {width: 100px; height: 100px;margin: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 .styleGuide .style_box .color .color_box .circle .circle1 { background-color: #ff9237;}

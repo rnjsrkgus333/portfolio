@@ -47,7 +47,7 @@ header .mo_menu .menu_box li .box {background-color: #09498D; color: #fff; width
 header .mo_menu .menu_box a {margin: 0;}
 
 /* pc_menu */
-header #pc_nav {display: none; width: fit-content; position: absolute; top: 85px; left: 0; right: 0; margin: auto; text-align: center; z-index: 5; }
+header #pc_nav {display: none; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; position: absolute; top: 85px; left: 0; right: 0; margin: auto; text-align: center; z-index: 5; }
 header #pc_nav > li > a {width: 120px;color: #000; margin-bottom: 10px;}
 header #pc_nav .sub_nav {background-color: rgba(216, 216, 216, 0.5); display: none; }
 header #pc_nav .sub_nav a {font-size: 14px; padding: 10px 0;}
@@ -66,7 +66,7 @@ header #pc_nav .sub_nav a:hover {color: #09498D;}
 /* Best */
 .Best {margin-top: 80px; position: relative;}
 .Best .line {width: 90%; border-top: 1px solid #000; margin: 0 auto; }
-.Best h3 {width: fit-content; background-color: #fff; padding: 10px; position: absolute; top: -20px; left: 0; right: 0; margin: auto; font-size: 18px;}
+.Best h3 {width: -webkit-fit-content;width: -moz-fit-content;width: fit-content; background-color: #fff; padding: 10px; position: absolute; top: -20px; left: 0; right: 0; margin: auto; font-size: 18px;}
 /* .Best .sliderBox {width: 100%; overflow: hidden;} */
 /* .Best ul {width: 400%; display: flex; margin-top: 20px;} */
 .Best ul {margin-top: 30px;}
@@ -110,8 +110,9 @@ header #pc_nav .sub_nav a:hover {color: #09498D;}
 .prdBox .pc_box .list a {margin: 15px 20px;}
 .prdBox .pc_box .list a:hover {color: #2f649c;}
 
-.prdgrid { display: grid; grid-template: repeat(4,auto)/repeat(2,1fr);padding:
-    0 2px; gap: 4px;}
+/* prdgrid */
+.prdgrid { display: flex; flex-wrap: wrap;}
+.prdgrid .product {width: 50%;}
 .prdgrid .img { width: 95%; height:0; padding-bottom: 133%;  margin: 0 auto; cursor: pointer;}
 
 .product p {font-size: 12px; margin: 0;}
@@ -179,13 +180,14 @@ footer .sns .insta a {width: 15px; height:15px; background: url(images/instagram
     .prdBox .top {margin-top: 35px; display: flex; width: 90%; margin: 0 auto; justify-content: space-between;}
     .prdBox .top > p {font-size: 14px;}
     .prdBox .top > .line {display: none;}
-    .prdBox .top > .pc {display: block; width: fit-content;}
+    .prdBox .top > .pc {display: block; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content;}
     .prdBox .top .mo_box {display: none;}
     .prdBox .pc_box { display: block;}
 
     /* prdgrid */
-    .prdgrid {grid-template: repeat(4,auto)/repeat(4,1fr);
-    gap: 10px; width:95%; max-width: 1300px; margin: 45px auto;place-content: space-between space-between;}
+    .prdgrid { width:95%; max-width: 1300px; margin: 45px auto;}
+
+    .prdgrid .product {width: 25%;}
 
     .product p {font-size: 14px;}
     .product #product {margin: 18px 0 5px;}
