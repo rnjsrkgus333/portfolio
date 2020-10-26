@@ -28,7 +28,26 @@ $(document).ready(function(){
         typewriter.typeString('신입 웹 퍼블리셔 권가현입니다.') //글자 입력
                             .pauseFor(4000) //딜레이
          .deleteAll()
-        .typeString('어쩌구저쩌구')
+        .typeString('언제나 열심히 달려가는 권가현입니다.')
         .pauseFor(4000) //딜레이
                             .start();
+
+
+
+    // // 예시예시
+    // $(document).mousemove(function(e){
+    //     // 마우스 커서 변수
+    //     var mouseX = e.pageX;
+    //     var mouseY = e.pageY;
+
+    //     $('#project .box .mouse_img').css({'top':mouseY,'left':mouseX})
+
+    // });
+
+    // // $('#project .box').hover(function(){
+    // //     $(this).children('.mouse_img').css({'display':'block'})
+    // // }, function(){
+    // //     $(this).children('.mouse_img').css({'display':'none'})
+    // // });
+
 });
