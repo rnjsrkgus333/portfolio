@@ -68,6 +68,7 @@ nav a:hover::before {width: 110%;}
 #project .box:last-of-type {border-bottom: 1px solid #E6E2DD;}
 #project .box a {color: #E6E2DD; display: flex; white-space: nowrap;}
 #project .box a:hover,#project .box a:active {background-color: #E6E2DD; color: #343434}
+#project .megabox a:hover, #project .megabox a:active {background: #E6E2DD url(About_Project/About_MEGABOX/images/PC_MEGABOX_preview.gif) no-repeat 50% 0;}
 #project .kangol a:hover, #project .kangol a:active {background: #E6E2DD url(About_Project/About_KANGOL/images/PC_KANGOL_preview.gif) no-repeat 50% 0;}
 #project .hanbom a:hover, #project .hanbom a:active {background: #E6E2DD url(About_Project/About_HANBOM/images/PC_HANBOM_preview.gif) no-repeat 50% 0;}
 #project .bustago a:hover, #project .bustago a:active {background: #E6E2DD url(images/bustago.png) no-repeat 50% 50%;}

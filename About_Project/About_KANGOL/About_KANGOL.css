@@ -35,9 +35,10 @@ header .mobile .menubtn {width:45px; height: 45px;display: flex; align-items: ce
 .container .menu .home a {background-color: #E6E2DD; color: #252525;}
 .menu .home a:hover,.menu .home a:active {background-color: #343434; color: #E6E2DD;}
 
-.menu .box1 a:hover,.menu .box1 a:active {background-color: #95b1c8}
-.menu .box2 a:hover,.menu .box2 a:active {background-color: #c7b570}
-.menu .box3 a:hover,.menu .box3 a:active {background-color: #d19e77}
+.menu .box2 a:hover,.menu .box1 a:active {background-color: #9374b6}
+.menu .box2 a:hover,.menu .box2 a:active {background-color: #95b1c8}
+.menu .box3 a:hover,.menu .box3 a:active {background-color: #c7b570}
+.menu .box4 a:hover,.menu .box4 a:active {background-color: #d19e77}
 .menu a:hover .proj {color: #343434;}
 .menu .box .main {margin: 0;font-family: 'S-CoreDream-7',sans-serif; font-size: 28px; padding: 25px 0 20px;}
 .menu .box .num {font-size: 10px; position: absolute; top: 10px; left: 5px;margin: 0;}

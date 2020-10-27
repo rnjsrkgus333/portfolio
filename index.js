@@ -25,30 +25,26 @@ $(document).ready(function(){
     });
     
     // typewriter
-    var typewriter = new Typewriter('.myintro .txt h4', {
-                            loop: true //반복
-                        });
+    var typewriter = new Typewriter('.myintro .txt h4', { loop: true //반복
+        });
         typewriter.typeString('신입 웹 퍼블리셔 권가현입니다.') //글자 입력
-                            .pauseFor(4000) //딜레이
-         .deleteAll()
+        .pauseFor(4000) //딜레이
+        .deleteAll()
         .typeString('언제나 열심히 달려가는 권가현입니다.')
         .pauseFor(4000) //딜레이
-                            .start();
+        .start();
 
     // let porj_box = $('#project .box a');
     // let proj_title = $(porj_box).children('.main');
     // $(proj_title).clone().appendTo(porj_box);
     // gsap.to(porj_box,5,{x: -(porj_box.width()),repeat: -1,ease:'none'});
 
-
     // // 예시예시
     // $(document).mousemove(function(e){
     //     // 마우스 커서 변수
     //     var mouseX = e.pageX;
     //     var mouseY = e.pageY;
-
     //     $('#project .box .mouse_img').css({'top':mouseY,'left':mouseX})
-
     // });
 
     // // $('#project .box').hover(function(){

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: '210 Namoogothic B';
+    src: url('font/TTNamoogothicB.woff2') format('woff2'),
+        url('font/TTNamoogothicB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '210 Namoogothic R';
+    src: url('font/TTNamoogothicR.woff2') format('woff2'),
+        url('font/TTNamoogothicR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoreanYNSJG4R';
+    src: url('font/KoreanYNSJG4-R.woff2') format('woff2'),
+        url('font/KoreanYNSJG4-R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '210 OmniGothic 020';
+    src: url('font/TTOmniGothicL.woff2') format('woff2'),
+        url('font/TTOmniGothicL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '210 OmniGothic 030';
+    src: url('font/TTOmniGothicM.woff2') format('woff2'),
+        url('font/TTOmniGothicM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
