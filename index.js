@@ -6,6 +6,7 @@ $(document).ready(function(){
         $(".menu").slideUp();
     });
 
+    // 모바일 타이틀
     $(window).resize(function(){
         let wid = $(window).width();
         if (wid < 1024) {
@@ -15,9 +16,11 @@ $(document).ready(function(){
             gsap.to(title,5,{x: -(title_img.width()),repeat: -1,ease:'none'});
         };
     });
+
+    // 로고 호버
     $('.contact .logo #logo_nothov').hover(function(){
         $(this).attr({'src':'images/logo_hov.png'});
-    },function(){
+    }, function(){
         $(this).attr({'src':'images/logo.png'});
     });
     
@@ -32,6 +35,10 @@ $(document).ready(function(){
         .pauseFor(4000) //딜레이
                             .start();
 
+    // let porj_box = $('#project .box a');
+    // let proj_title = $(porj_box).children('.main');
+    // $(proj_title).clone().appendTo(porj_box);
+    // gsap.to(porj_box,5,{x: -(porj_box.width()),repeat: -1,ease:'none'});
 
 
     // // 예시예시
