@@ -75,7 +75,7 @@ nav a:hover::before {width: 110%;}
 
 /* #project .box:nth-of-type(1) a:hover,#project .box:nth-child(1) a:active {background: url(images/ypelectronic.PNG) no-repeat; background-size: cover; opacity: 0.7; filter: url('#noise');} */
 
-#project .box .main {margin: 0;font-family: 'S-CoreDream-7',sans-serif; font-size: 25px; padding: 20px 0; animation: textLoop 15s linear infinite;}
+#project .box .main {margin: 0;font-family: 'S-CoreDream-7',sans-serif; font-size: 25px; padding: 20px 0; -webkit-animation: textLoop 15s linear infinite; animation: textLoop 15s linear infinite;}
 #project .box .num {font-size: 10px; position: absolute; top: 10px; left: 5px;margin: 0;}
 #project .box .arrow {font-size: 15px; position: absolute; bottom: 10px; right: 15px;margin: 0;}
 /* #project .last {background-color: #DEDCD9;}
@@ -83,13 +83,21 @@ nav a:hover::before {width: 110%;}
 #project .last a:hover, #project .last a:active {background-color: #91acc2; color: #DEDCD9; cursor: url(hand.cur), pointer;} */
 
 
-@keyframes textLoop {
+@-webkit-keyframes textLoop {
     0% {
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0)
     }
     100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+}
+
+
+@keyframes textLoop {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+    100% {
         transform: translate3d(-100%, 0, 0)
     }
 }
